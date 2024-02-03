@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #28a745;
+            margin-top: 50px;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .img-fluid {
+            border: 5px solid #28a745;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            max-width: 100%;
+            max-height: 500px;
+            height: auto;
+        }
+
+        .img-fluid:hover {
+            transform: scale(1.1);
+        }
+        .hero-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 50px;
+        }
+        .hero-image {
+            max-width: 100%;
+            max-height: 400px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(40, 167, 69, 0.3);
+            margin-bottom: 20px;
+        }
+        .hero-content {
+            text-align: center;
+        }
+        .btn-primary,
+        .btn-outline-secondary {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+        .btn-primary:hover,
+        .btn-outline-secondary:hover {
+            transform: scale(1.05);
+        }
+        .additional-image {
+            margin-top: 30px;
+            max-width: 100%;
+            max-height: 400px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(40, 167, 69, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="hero-container">
+        <h1 class="animated-text">Do you want to smile?</h1>
+        <img class="hero-image img-fluid" src="static/images/happy_dog2.jpg" alt="Smiling Image">
+        <div class="col-lg-6 mx-auto hero-content">
+            <p class="lead mb-4">Sometimes we are sad, so I made this website to make you smile and be happy again. Click one of the buttons below.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <a href="http://localhost:5000/cats" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 gap-3">Smile again!</button></a>
+                    <a href="http://localhost:5000/motivation" target="_blank"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Motivate yourself!</button></a>
+            </div>
+        </div>
+    </div>
+    <img class="additional-image img-fluid" src="static/images/happy_dog.jpg" alt="Additional Image">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-ojg46ZPNhFxWOpzFBhYFZK8XM9qF4MzSLEPc/jzW2h0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-dlGRTaG8r2PKdMI4z0F1W6Tn5zdjpk3Nje/wI8QQj6U9jNRSm7vcsf9AAMKFDcC" crossorigin="anonymous"></script>
+
+</body>
+</html>
