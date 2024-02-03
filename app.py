@@ -25,7 +25,7 @@ def cats():
 def motivacion():
     motivacion_api_url = "https://type.fit/api/quotes"
     frases = requests.get(motivacion_api_url).json()
-    return render_template("frases.html", frases=frases)
+    return render_template("motivacion.html", frases=frases)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
